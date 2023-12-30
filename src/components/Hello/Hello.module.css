@@ -76,17 +76,18 @@
 	color: var(--second-text);
 	background-color: var(--designer-color);
 }
+.button__contact_me:hover {
+	background-color: var(--designer-color__hover);
+	transition: background-color 0.3s;
+}
+
 .button__download_cv {
 	color: var(--first-text);
 	background-color: var(--second-color);
 }
-.button__contact_me:hover {
-	box-shadow: 3px 3px 5px var(--designer-color);
-	transition: box-shadow 0.3s;
-}
 .button__download_cv:hover {
-	box-shadow: 3px 3px 5px var(--second-color);
-	transition: box-shadow 0.3s;
+	background-color: var(--second-color__hover);
+	transition: background-color 0.3s;
 }
 .hello__img {
 	height: 450px;

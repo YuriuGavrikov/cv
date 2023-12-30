@@ -1,7 +1,12 @@
 :root {
 	--designer-color: rgb(82, 131, 255);
+	--designer-color__hover: rgb(82, 110, 255);
+
 	--first-color: #ccc;
-	--second-color: #efefef;
+
+	--second-color: rgb(240, 240, 240);
+	--second-color__hover: rgb(235, 235, 235);
+
 	--third-color: #cccccc;
 
 	--first-text: #444;
