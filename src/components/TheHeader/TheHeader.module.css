@@ -1,0 +1,22 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	width: 100%;
+	border-bottom: 1px solid var(--first-color);
+}
+.logo {
+	font-size: 30px;
+}
+.logo span {
+	color: var(--designer-color);
+}
+.navigation {
+	display: flex;
+	gap: 20px;
+}
+.link {
+	text-decoration: none;
+	color: var(--first-text);
+}
