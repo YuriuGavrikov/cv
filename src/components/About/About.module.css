@@ -4,6 +4,11 @@
 	gap: 50px;
 
 	padding: 50px 0;
+
+	color: var(--first-text);
+	@media (max-width: 740px) {
+		font-size: 14px;
+	}
 }
 .skills {
 	display: flex;

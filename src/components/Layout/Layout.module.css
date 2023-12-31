@@ -10,6 +10,8 @@
 	--third-color: #cccccc;
 
 	--first-text: #444;
+	--first-text__hover: #777;
+
 	--second-text: #fff;
 }
 * {

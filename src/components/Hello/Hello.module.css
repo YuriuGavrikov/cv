@@ -1,6 +1,9 @@
 .hello {
 	display: flex;
 	align-items: center;
+	@media (max-width: 740px) {
+		flex-direction: column-reverse;
+	}
 }
 .hello__greeting {
 	display: flex;
@@ -17,6 +20,8 @@
 
 	@media (max-width: 740px) {
 		font-size: 14px;
+
+		height: 400px;
 
 		gap: 15px;
 
@@ -91,8 +96,8 @@
 }
 .hello__img {
 	height: 450px;
-	@media (max-width: 740px) {
-		height: 350px;
+	@media (max-width: 420px) {
+		height: 250px;
 	}
 }
 .photo {

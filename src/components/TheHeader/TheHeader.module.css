@@ -20,3 +20,6 @@
 	text-decoration: none;
 	color: var(--first-text);
 }
+.link:hover {
+	color: var(--first-text__hover);
+}
