@@ -1,0 +1,33 @@
+.education {
+	display: flex;
+	gap: 30px;
+	@media (max-width: 740px) {
+		flex-direction: column;
+		gap: 10px;
+	}
+}
+.education__hello {
+	display: block;
+}
+.education__hello p {
+	padding-bottom: 25px;
+	@media (max-width: 740px) {
+		padding-bottom: 10px;
+	}
+}
+.education__title span {
+	color: var(--designer-color);
+}
+.education__items {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	flex-basis: 100%;
+	@media (max-width: 740px) {
+		gap: 10px;
+	}
+}
+.education__item {
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid var(--first-color);
+}

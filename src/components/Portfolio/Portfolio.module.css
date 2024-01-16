@@ -24,6 +24,7 @@
 .item__title {
 }
 .item__img {
+	display: flex;
 	overflow: hidden;
 }
 .item__img img {

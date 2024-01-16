@@ -1,6 +1,11 @@
+import { useState } from "react";
 import styles from "./Hello.module.css";
+import Modal from "../Modal/Modal";
+import TheButton from "../generic/TheButton/TheButton";
+import TheButtonDesigner from "../generic/TheButtonDesigner/TheButtonDesigner";
 
 export default function Hello() {
+	const [isModal, setIsModal] = useState<boolean>(false);
 	return (
 		<div className={styles.hello}>
 			<div className={styles.hello__greeting}>
@@ -28,23 +33,16 @@ export default function Hello() {
 					</div>
 				</div>
 				<div className={styles.greeting__buttons}>
-					<button
-						className={styles.button + " " + styles.button__contact_me}
-						type="button"
-					>
+					<TheButtonDesigner setIsModal={setIsModal}>
 						Связаться со мной
-					</button>
-					<button
-						className={styles.button + " " + styles.button__download_cv}
-						type="button"
-					>
-						Скачать CV
-					</button>
+					</TheButtonDesigner>
+					<TheButton>Скачать CV</TheButton>
 				</div>
 			</div>
 			<div className={styles.hello__img}>
 				<img className={styles.photo} src="./img/hello.jpg" alt="" />
 			</div>
+			{isModal && <Modal setIsModal={setIsModal} />}
 		</div>
 	);
 }
