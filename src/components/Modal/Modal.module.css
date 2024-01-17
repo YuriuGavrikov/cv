@@ -20,8 +20,8 @@
 
 	padding: 20px;
 
-	height: 400px;
 	width: 400px;
+
 	border: 2px solid var(--first-color);
 
 	background-color: rgb(255, 255, 255);
@@ -52,4 +52,36 @@
 }
 .modal button {
 	padding: 10px;
+}
+
+.button {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+
+	border: none;
+	border-radius: none;
+
+	padding: 1em 1.5em;
+
+	color: var(--second-text);
+	background-color: var(--designer-color);
+}
+
+.button:hover {
+	background-color: var(--designer-color__hover);
+	transition: background-color 0.3s;
+}
+
+.button:disabled,
+.button[disabled] {
+	background-color: #cccccc;
+}
+
+.valid {
+	color: red;
+	text-align: center;
 }
