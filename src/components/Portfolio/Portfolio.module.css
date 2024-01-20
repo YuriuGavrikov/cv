@@ -9,6 +9,10 @@
 		gap: 40px;
 	}
 }
+.portfolio a {
+	color: var(--first-text);
+}
+
 .portfolio__item {
 	display: flex;
 	flex-direction: column;

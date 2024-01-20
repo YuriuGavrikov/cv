@@ -35,6 +35,7 @@
 	border-radius: 4px;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
 }
 
 .modal textarea {
@@ -44,35 +45,48 @@
 	box-sizing: border-box;
 	border: 2px solid #ccc;
 	border-radius: 4px;
+	margin: 0;
 	resize: none;
+	font-family: "Montserrat", sans-serif;
 }
+
+.modal input[type="text"]::placeholder {
+	color: crimson;
+}
+.modal textarea::placeholder {
+	color: crimson;
+}
+
 .btns {
 	display: flex;
 	gap: 20px;
 }
-.modal button {
-	padding: 10px;
-}
 
 .button {
-	padding: 0;
-	border: none;
-	font: inherit;
-	color: inherit;
-	background-color: transparent;
-	cursor: pointer;
-
-	border: none;
-	border-radius: none;
-
+	width: 100%;
 	padding: 1em 1.5em;
 
+	font: inherit;
+	cursor: pointer;
+	border: none;
+}
+
+.buttonDesigner {
 	color: var(--second-text);
 	background-color: var(--designer-color);
 }
-
-.button:hover {
+.buttonDesigner:hover {
 	background-color: var(--designer-color__hover);
+
+	transition: background-color 0.3s;
+}
+
+.buttonSecond {
+	color: var(--first-text);
+	background-color: var(--second-color);
+}
+.buttonSecond:hover {
+	background-color: var(--second-color__hover);
 	transition: background-color 0.3s;
 }
 
@@ -81,7 +95,13 @@
 	background-color: #cccccc;
 }
 
-.valid {
+.noValid {
 	color: red;
 	text-align: center;
+	margin-top: -10px;
+}
+.isValid {
+	color: green;
+	text-align: center;
+	margin-top: -10px;
 }

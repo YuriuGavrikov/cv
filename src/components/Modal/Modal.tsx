@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Modal.module.css";
 
-import TheButton from "../generic/TheButton/TheButton";
-import TheButtonDesigner from "../generic/TheButtonDesigner/TheButtonDesigner";
-
 import axios from "axios";
 
 type Props = {
@@ -62,6 +59,7 @@ export default function Modal(props: Props) {
 				<label>
 					Ваше имя
 					<input
+						placeholder="Заполните это поле"
 						required
 						value={theName}
 						onChange={(event) => handleSetName(event.target.value)}
@@ -71,6 +69,7 @@ export default function Modal(props: Props) {
 				<label>
 					Ник в Telegram
 					<input
+						placeholder="Заполните это поле"
 						required
 						value={nameTg}
 						onChange={(event) => handleSetNameTg(event.target.value)}
@@ -80,26 +79,29 @@ export default function Modal(props: Props) {
 				<label>
 					Ваше предложение
 					<textarea
+						placeholder="Заполните это поле"
 						required
 						value={introduction}
 						onChange={(event) => handleSetIntroduction(event.target.value)}
 					></textarea>
 				</label>
-				{formValid && <div className={styles.valid}>Заполните все поля</div>}
 
 				<div className={styles.btns}>
 					<button
 						disabled={formValid}
-						className={styles.button}
-						type="button"
+						className={`${styles.button} ${styles.buttonDesigner}`}
 						onClick={() => {
 							submitMessage ? submitMessage() : null;
 						}}
 					>
 						Отправить
 					</button>
-
-					<TheButton setIsModal={props.setIsModal}>Закрыть</TheButton>
+					<button
+						className={`${styles.button} ${styles.buttonSecond}`}
+						onClick={() => props.setIsModal(false)}
+					>
+						Закрыть
+					</button>
 				</div>
 			</div>
 		</div>

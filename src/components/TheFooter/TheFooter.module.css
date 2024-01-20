@@ -5,3 +5,6 @@
 	padding: 20px 0;
 	border-top: 1px solid var(--first-color);
 }
+.footer a {
+	color: var(--first-text);
+}

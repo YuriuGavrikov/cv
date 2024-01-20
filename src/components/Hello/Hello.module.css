@@ -54,7 +54,6 @@
 .greeting__contacts_content {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
 }
 .greeting__buttons {
 	display: flex;
