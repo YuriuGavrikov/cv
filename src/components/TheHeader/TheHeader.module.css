@@ -2,9 +2,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 70px;
+	height: 50px;
 	width: 100%;
 	border-bottom: 1px solid var(--first-color);
+	background-color: white;
 }
 .logo {
 	font-size: 30px;

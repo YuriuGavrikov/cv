@@ -2,17 +2,21 @@
 	--designer-color: rgb(82, 131, 255);
 	--designer-color__hover: rgb(82, 110, 255);
 
-	--first-color: #ccc;
+	--first-color: #cccccc;
 
 	--second-color: rgb(240, 240, 240);
 	--second-color__hover: rgb(235, 235, 235);
 
-	--third-color: #cccccc;
+	--third-color: #ffffff;
 
 	--first-text: #444;
 	--first-text__hover: #777;
 
-	--second-text: #fff;
+	--second-text: #ffffff;
+
+	--third-text: #8b8b8b;
+
+	--bg-opacity: #ededede0;
 }
 * {
 	box-sizing: border-box;
@@ -38,6 +42,7 @@ body {
 	align-items: center;
 
 	width: 100%;
+	position: relative;
 }
 
 .container {
@@ -48,4 +53,9 @@ body {
 	@media (max-width: 740px) {
 		width: 90vw;
 	}
+}
+
+.stickyHeader {
+	position: sticky;
+	top: 0;
 }
