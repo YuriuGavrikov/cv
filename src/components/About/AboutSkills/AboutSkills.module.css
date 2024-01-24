@@ -1,6 +1,8 @@
 .skills {
 	display: flex;
 	gap: 30px;
+
+	/* border-bottom: 1px solid var(--first-color); */
 	@media (max-width: 740px) {
 		flex-direction: column;
 		gap: 10px;
@@ -15,6 +17,7 @@
 		padding-bottom: 10px;
 	}
 }
+
 .skills__title span {
 	color: var(--designer-color);
 }
@@ -27,9 +30,12 @@
 		gap: 10px;
 	}
 }
+
 .skills__item {
 	padding: 0 0 20px 0;
-	border-bottom: 1px solid var(--first-color);
+	&:not(:last-child) {
+		border-bottom: 1px solid var(--first-color);
+	}
 }
 
 .skills__imgs {

@@ -24,6 +24,16 @@
 	padding: 0;
 }
 
+/* убираем масштабирование на  iphone при нажатии на input */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	select:focus,
+	textarea:focus,
+	input:focus {
+		font-size: 16px;
+		padding: 10.5px 20px;
+	}
+}
+
 body {
 	height: 100%;
 

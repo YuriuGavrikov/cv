@@ -6,7 +6,7 @@
 
 	@media (max-width: 740px) {
 		flex-direction: column;
-		gap: 40px;
+		gap: 0;
 	}
 }
 .portfolio a {

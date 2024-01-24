@@ -1,7 +1,7 @@
 .about {
 	display: flex;
 	flex-direction: column;
-	gap: 50px;
+	gap: 20px;
 
 	padding: 30px 0;
 
@@ -9,4 +9,11 @@
 	@media (max-width: 740px) {
 		font-size: 14px;
 	}
+}
+.hrShelf {
+	margin: 0;
+	padding: 0;
+	height: 1px;
+	border: none;
+	background: linear-gradient(45deg, var(--designer-color), #ffffff);
 }
