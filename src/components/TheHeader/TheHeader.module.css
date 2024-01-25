@@ -2,14 +2,16 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 50px;
+	height: 3rem;
 	width: 100%;
 	border-bottom: 1px solid var(--first-color);
 	background-color: white;
 	box-shadow: 0 6px 20px -20px #333;
+	@media (min-width: 2060px) {
+		height: 6rem;
+	}
 }
 .logo {
-	font-size: 30px;
 	font-weight: bold;
 }
 .logo span {
@@ -17,7 +19,7 @@
 }
 .navigation {
 	display: flex;
-	gap: 20px;
+	gap: 30px;
 }
 .link {
 	text-decoration: none;

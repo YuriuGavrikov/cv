@@ -9,7 +9,7 @@ export default function Layout() {
 			<div className={`${styles.container} ${styles.stickyHeader}`}>
 				<TheHeader />
 			</div>
-			<main>
+			<main className={styles.main}>
 				<div className={styles.container}>
 					<Outlet />
 				</div>

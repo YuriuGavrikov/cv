@@ -9,8 +9,9 @@
 	bottom: 0;
 	justify-content: center;
 	align-items: flex-start;
+
 	background: var(--bg-opacity);
-	padding: 30px 0;
+	padding: 50px 0;
 
 	@media (max-width: 740px) {
 		padding: 0;
@@ -24,17 +25,18 @@
 
 	padding: 20px;
 
-	width: 400px;
-	border: 2px solid var(--first-color);
+	width: 50%;
 
 	background-color: rgb(255, 255, 255);
 
 	transform: translateY(-150%);
 	animation: ani 0.5s forwards;
 
+	@media (max-width: 1040px) {
+		width: 70%;
+	}
 	@media (max-width: 740px) {
 		width: 100%;
-		border: none;
 	}
 }
 @keyframes ani {
@@ -89,7 +91,6 @@
 	color: var(--designer-color);
 }
 .title p {
-	font-size: 10px;
 	color: var(--third-text);
 }
 

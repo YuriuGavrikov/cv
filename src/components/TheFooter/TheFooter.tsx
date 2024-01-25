@@ -7,7 +7,7 @@ export default function TheFooter() {
 				<div>GitHub</div>
 			</a>
 
-			<div>2023</div>
+			<div>2024</div>
 		</footer>
 	);
 }
