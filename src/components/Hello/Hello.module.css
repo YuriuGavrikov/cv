@@ -68,6 +68,9 @@
 		text-align: start;
 	}
 }
+.greeting__contacts_content a {
+	color: var(--first-text);
+}
 
 .greeting__buttons {
 	display: flex;

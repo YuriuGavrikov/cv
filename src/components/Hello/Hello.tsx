@@ -33,8 +33,8 @@ export default function Hello() {
 							<p>ADDRESS</p>
 						</div>
 						<div className={styles.greeting__contacts_content}>
-							<p>+7 981 9583833</p>
-							<p>@yuriu_gavrikov</p>
+							<a href="tel:+79819583833">+7(981)9583833</a>
+							<a href="https://t.me/yuriu_gavrikov">@yuriu_gavrikov</a>
 							<p>Saint Petersburg, Russia</p>
 						</div>
 					</div>
