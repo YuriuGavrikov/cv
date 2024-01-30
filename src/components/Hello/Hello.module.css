@@ -34,10 +34,12 @@
 	}
 }
 .greeting {
+	min-width: 400px;
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
 	@media (max-width: 1040px) {
+		min-width: none;
 		gap: 20px;
 	}
 }
@@ -110,6 +112,13 @@
 .hello__img {
 	height: 400px;
 	width: 100%;
+
+	@media (max-width: 3850px) {
+		height: 800px;
+	}
+	@media (max-width: 2060px) {
+		height: 500px;
+	}
 	@media (max-width: 1040px) {
 		height: 100%;
 	}

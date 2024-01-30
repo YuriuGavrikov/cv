@@ -25,14 +25,14 @@
 }
 
 /* убираем масштабирование на  iphone при нажатии на input */
-/* @media screen and (-webkit-min-device-pixel-ratio: 0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
 	select:focus,
 	textarea:focus,
 	input:focus {
 		font-size: 1rem;
 		padding: 10.5px 20px;
 	}
-} */
+}
 
 body {
 	overflow-x: hidden;
@@ -42,10 +42,12 @@ body {
 	font-family: "Montserrat", sans-serif;
 	line-height: 1.6;
 
-	@media (min-width: 2060px) {
-		font-size: 3rem;
+	@media (max-width: 3850px) {
+		font-size: 2.5rem;
 	}
-
+	@media (max-width: 2060px) {
+		font-size: 1rem;
+	}
 	@media (max-width: 1040px) {
 		font-size: 1.5rem;
 	}
@@ -72,7 +74,6 @@ body {
 		width: 90vw;
 	}
 }
-
 .stickyHeader {
 	position: sticky;
 	top: 0;

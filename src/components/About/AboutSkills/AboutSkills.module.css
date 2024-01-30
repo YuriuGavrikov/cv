@@ -8,7 +8,7 @@
 	}
 }
 .skills__hello {
-	display: block;
+	width: 100%;
 }
 .skills__hello p {
 	padding-bottom: 25px;

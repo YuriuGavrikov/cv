@@ -3,6 +3,14 @@ import styles from "./Portfolio.module.css";
 export default function Portfolio() {
 	return (
 		<div className={styles.portfolio}>
+			<a href="http://dev.geekportal.org/" target="_blank">
+				<div className={styles.portfolio__item}>
+					<h3 className={styles.item__title}>Geekportal | Laravel, Vue</h3>
+					<div className={styles.item__img}>
+						<img src="./portfolio/geek.png" alt="lending" />
+					</div>
+				</div>
+			</a>
 			<a
 				href="https://yuriugavrikov.github.io/lending-ui-ux-designer/"
 				target="_blank"

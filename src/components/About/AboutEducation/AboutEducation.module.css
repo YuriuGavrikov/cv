@@ -7,7 +7,7 @@
 	}
 }
 .education__hello {
-	display: block;
+	width: 100%;
 }
 .education__hello p {
 	padding-bottom: 25px;

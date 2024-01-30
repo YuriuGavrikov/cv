@@ -20,7 +20,7 @@ export default function Hello() {
 						<p>Я Frontend developer из Санкт-Петербурга.</p>
 						<p>
 							В настоящее время я изучаю веб технологии и разрабатываю свои
-							проэкты.
+							проекты.
 						</p>
 						<p>Хочу найти работу и повысить свои навыки веб-разработчика.</p>
 					</span>
@@ -43,7 +43,7 @@ export default function Hello() {
 						<TheButtonDesigner setIsModal={setIsModal}>
 							Связаться со мной
 						</TheButtonDesigner>
-						<TheButton>Скачать CV</TheButton>
+						{/* <TheButton>Скачать CV</TheButton> */}
 					</div>
 				</div>
 			</div>
