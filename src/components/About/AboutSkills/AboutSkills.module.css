@@ -26,6 +26,7 @@
 	flex-direction: column;
 	gap: 10px;
 	flex-basis: 100%;
+
 	@media (min-width: 992px) {
 		gap: 30px;
 	}
@@ -36,6 +37,10 @@
 	&:not(:last-child) {
 		border-bottom: 1px solid var(--first-color);
 	}
+}
+.skills__item p {
+	padding-left: 10px;
+	border-left: 1px solid var(--designer-color);
 }
 
 .skills__imgs {

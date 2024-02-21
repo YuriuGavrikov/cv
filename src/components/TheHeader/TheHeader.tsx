@@ -4,9 +4,12 @@ import styles from "./TheHeader.module.css";
 export default function TheHeader() {
 	return (
 		<header className={styles.header}>
-			<h2 className={styles.logo}>
-				Yuriu<span>.</span>
-			</h2>
+			<Link to="/" className={styles.link}>
+				<h2 className={styles.logo}>
+					Yuriu<span>.</span>
+				</h2>
+			</Link>
+
 			<nav className={styles.navigation}>
 				<Link to="/" className={styles.link}>
 					Hello

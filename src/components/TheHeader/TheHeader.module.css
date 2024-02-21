@@ -7,16 +7,6 @@
 	border-bottom: 1px solid var(--first-color);
 	background-color: white;
 	box-shadow: 0 6px 20px -20px #333;
-
-	@media (min-width: 2060px) {
-		height: 6rem;
-	}
-	@media (max-width: 1040px) {
-		height: 4rem;
-	}
-	@media (max-width: 450px) {
-		height: 2.5rem;
-	}
 }
 .logo {
 	font-weight: bold;
@@ -26,7 +16,10 @@
 }
 .navigation {
 	display: flex;
-	gap: 30px;
+	gap: 20px;
+	@media (min-width: 992px) {
+		gap: 30px;
+	}
 }
 .link {
 	text-decoration: none;

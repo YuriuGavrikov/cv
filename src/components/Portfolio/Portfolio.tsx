@@ -8,7 +8,7 @@ export default function Portfolio() {
 					<div className={styles.item__img}>
 						<img src="./portfolio/geek.png" alt="lending" />
 					</div>
-					<h3 className={styles.item__title}>Geekportal | Laravel, Vue</h3>
+					<p className={styles.item__title}>Geekportal | Laravel, Vue</p>
 				</div>
 			</a>
 			<a
@@ -19,7 +19,7 @@ export default function Portfolio() {
 					<div className={styles.item__img}>
 						<img src="./portfolio/lending.png" alt="lending" />
 					</div>
-					<h3 className={styles.item__title}>Landing page | HTML, CSS, JS</h3>
+					<p className={styles.item__title}>Landing page | HTML, CSS, JS</p>
 				</div>
 			</a>
 			<a
@@ -30,7 +30,7 @@ export default function Portfolio() {
 					<div className={styles.item__img}>
 						<img src="./portfolio/weather.png" alt="weather" />
 					</div>
-					<h3 className={styles.item__title}>Weather app | Vue3, SASS</h3>
+					<p className={styles.item__title}>Weather app | Vue3, SASS</p>
 				</div>
 			</a>
 		</div>
