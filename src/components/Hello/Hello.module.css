@@ -10,6 +10,7 @@
 }
 .hello__greeting {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	gap: 40px;
 
@@ -19,29 +20,16 @@
 
 	color: var(--first-text);
 
-	@media (max-width: 1040px) {
-		flex-direction: column;
-
+	@media (min-width: 992px) {
+		flex-direction: row;
 		gap: 30px;
-
 		padding: 20px 0;
-	}
-
-	@media (max-width: 450px) {
-		gap: 20px;
-
-		background-position: bottom right -60px;
 	}
 }
 .greeting {
-	min-width: 400px;
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	@media (max-width: 1040px) {
-		min-width: none;
-		gap: 20px;
-	}
 }
 .greeting__title {
 }
@@ -51,10 +39,7 @@
 .greeting__contacts {
 	display: flex;
 	justify-content: space-between;
-	@media (max-width: 1040px) {
-		justify-content: start;
-		gap: 50px;
-	}
+	gap: 50px;
 }
 .greeting__contacts_item,
 .greeting__contacts_content {
@@ -66,68 +51,31 @@
 }
 .greeting__contacts_content {
 	text-align: end;
-	@media (max-width: 1040px) {
-		text-align: start;
-	}
 }
 .greeting__contacts_content a {
 	color: var(--first-text);
+	text-decoration: none;
 }
 
 .greeting__buttons {
 	display: flex;
 	gap: 10px;
 }
-.button {
-	padding: 0;
-	border: none;
-	font: inherit;
-	color: inherit;
-	background-color: transparent;
-	cursor: pointer;
 
-	border: solid 1px transparent;
-	border-radius: none;
-
-	padding: 1em 1.5em;
-}
-
-.button__contact_me {
-	color: var(--second-text);
-	background-color: var(--designer-color);
-}
-.button__contact_me:hover {
-	background-color: var(--designer-color__hover);
-	transition: background-color 0.3s;
-}
-
-.button__download_cv {
-	color: var(--first-text);
-	background-color: var(--second-color);
-}
-.button__download_cv:hover {
-	background-color: var(--second-color__hover);
-	transition: background-color 0.3s;
-}
 .hello__img {
-	height: 400px;
 	width: 100%;
+	height: 200px;
+	background-image: url("/img/hello.jpg");
+	background-size: cover;
+	background-position: center;
 
-	@media (max-width: 3850px) {
-		height: 800px;
+	@media (min-width: 768px) {
+		height: 400px;
 	}
-	@media (max-width: 2060px) {
+	@media (min-width: 1400px) {
 		height: 500px;
 	}
-	@media (max-width: 1040px) {
-		height: 100%;
+	@media (min-width: 3000px) {
+		height: 800px;
 	}
-	@media (max-width: 450px) {
-		height: 450px;
-	}
-}
-.photo {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
 }

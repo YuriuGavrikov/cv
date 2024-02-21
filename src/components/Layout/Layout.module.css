@@ -16,7 +16,7 @@
 
 	--third-text: #8b8b8b;
 
-	--bg-opacity: #ededede0;
+	--bg-opacity: #edededb0;
 }
 * {
 	box-sizing: border-box;
@@ -24,36 +24,44 @@
 	padding: 0;
 }
 
-/* убираем масштабирование на  iphone при нажатии на input */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-	select:focus,
-	textarea:focus,
-	input:focus {
-		font-size: 1rem;
-		padding: 10.5px 20px;
-	}
+html,
+body {
+	height: 100%;
 }
 
 body {
 	overflow-x: hidden;
 
-	height: 100%;
-
 	font-family: "Montserrat", sans-serif;
 	line-height: 1.6;
 
-	@media (max-width: 3850px) {
-		font-size: 2.5rem;
-	}
-	@media (max-width: 2060px) {
+	font-size: 1rem;
+
+	@media (min-width: 576px) {
 		font-size: 1rem;
 	}
-	@media (max-width: 1040px) {
+	@media (min-width: 768px) {
 		font-size: 1.5rem;
 	}
-	@media (max-width: 450px) {
-		font-size: 0.8rem;
+	@media (min-width: 992px) {
+		font-size: 1rem;
 	}
+	@media (min-width: 1200px) {
+		font-size: 1rem;
+	}
+	@media (min-width: 1400px) {
+		font-size: 1rem;
+	}
+	@media (min-width: 2048px) {
+		font-size: 1.3rem;
+	}
+}
+
+/* убираем масштабирование на iphone при нажатии на input */
+input,
+textarea,
+select {
+	font-size: 16px;
 }
 
 .wrapper {
@@ -62,10 +70,11 @@ body {
 	align-items: center;
 	justify-content: space-between;
 
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	position: relative;
 }
+
 .container {
 	display: flex;
 	justify-content: center;
@@ -77,4 +86,5 @@ body {
 .stickyHeader {
 	position: sticky;
 	top: 0;
+	z-index: 10;
 }

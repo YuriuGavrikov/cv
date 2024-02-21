@@ -9,12 +9,13 @@
 	bottom: 0;
 	justify-content: center;
 	align-items: flex-start;
+	z-index: 20;
 
 	background: var(--bg-opacity);
-	padding: 50px 0;
+	padding: 0;
 
-	@media (max-width: 740px) {
-		padding: 0;
+	@media (min-width: 768px) {
+		padding: 50px 0;
 	}
 }
 
@@ -25,18 +26,18 @@
 
 	padding: 20px;
 
-	width: 50%;
+	width: 100%;
 
 	background-color: rgb(255, 255, 255);
 
 	transform: translateY(-150%);
 	animation: ani 0.5s forwards;
 
-	@media (max-width: 1040px) {
+	@media (min-width: 768px) {
 		width: 70%;
 	}
-	@media (max-width: 740px) {
-		width: 100%;
+	@media (min-width: 992px) {
+		width: 50%;
 	}
 }
 @keyframes ani {

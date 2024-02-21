@@ -1,18 +1,19 @@
 .education {
 	display: flex;
-	gap: 30px;
-	@media (max-width: 1040px) {
-		flex-direction: column;
-		gap: 10px;
+	flex-direction: column;
+	gap: 10px;
+	@media (min-width: 992px) {
+		flex-direction: row;
+		gap: 30px;
 	}
 }
 .education__hello {
 	width: 100%;
 }
 .education__hello p {
-	padding-bottom: 25px;
-	@media (max-width: 1040px) {
-		padding-bottom: 10px;
+	padding-bottom: 10px;
+	@media (min-width: 992px) {
+		padding-bottom: 25px;
 	}
 }
 .education__title span {
@@ -21,10 +22,10 @@
 .education__items {
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
+	gap: 10px;
 	flex-basis: 100%;
-	@media (max-width: 740px) {
-		gap: 10px;
+	@media (min-width: 768px) {
+		gap: 30px;
 	}
 }
 

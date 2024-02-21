@@ -1,16 +1,14 @@
 import { useState } from "react";
 import styles from "./Hello.module.css";
 import Modal from "../Modal/Modal";
-import TheButton from "../generic/TheButton/TheButton";
+// import TheButton from "../generic/TheButton/TheButton";
 import TheButtonDesigner from "../generic/TheButtonDesigner/TheButtonDesigner";
 
 export default function Hello() {
 	const [isModal, setIsModal] = useState<boolean>(false);
 	return (
 		<div className={styles.hello}>
-			<div className={styles.hello__img}>
-				<img className={styles.photo} src="./img/hello.jpg" alt="" />
-			</div>
+			<div className={styles.hello__img}></div>
 			<div className={styles.hello__greeting}>
 				<div className={styles.greeting}>
 					<h1 className={styles.greeting__title}>

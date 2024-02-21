@@ -5,10 +5,10 @@ export default function Portfolio() {
 		<div className={styles.portfolio}>
 			<a href="http://dev.geekportal.org/" target="_blank">
 				<div className={styles.portfolio__item}>
-					<h3 className={styles.item__title}>Geekportal | Laravel, Vue</h3>
 					<div className={styles.item__img}>
 						<img src="./portfolio/geek.png" alt="lending" />
 					</div>
+					<h3 className={styles.item__title}>Geekportal | Laravel, Vue</h3>
 				</div>
 			</a>
 			<a
@@ -16,10 +16,10 @@ export default function Portfolio() {
 				target="_blank"
 			>
 				<div className={styles.portfolio__item}>
-					<h3 className={styles.item__title}>Landing page | HTML, CSS, JS </h3>
 					<div className={styles.item__img}>
 						<img src="./portfolio/lending.png" alt="lending" />
 					</div>
+					<h3 className={styles.item__title}>Landing page | HTML, CSS, JS</h3>
 				</div>
 			</a>
 			<a
@@ -27,10 +27,10 @@ export default function Portfolio() {
 				target="_blank"
 			>
 				<div className={styles.portfolio__item}>
-					<h3 className={styles.item__title}>Weather app | Vue3, SASS </h3>
 					<div className={styles.item__img}>
 						<img src="./portfolio/weather.png" alt="weather" />
 					</div>
+					<h3 className={styles.item__title}>Weather app | Vue3, SASS</h3>
 				</div>
 			</a>
 		</div>
