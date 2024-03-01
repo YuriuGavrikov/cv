@@ -3,6 +3,7 @@ import styles from "./Hello.module.css";
 import Modal from "../Modal/Modal";
 // import TheButton from "../generic/TheButton/TheButton";
 import TheButtonDesigner from "../generic/TheButtonDesigner/TheButtonDesigner";
+import TheButtonDownload from "../generic/TheButtonDownload/TheButtonDownload";
 
 export default function Hello() {
 	const [isModal, setIsModal] = useState<boolean>(false);
@@ -41,7 +42,8 @@ export default function Hello() {
 						<TheButtonDesigner setIsModal={setIsModal}>
 							Связаться со мной
 						</TheButtonDesigner>
-						{/* <TheButton>Скачать CV</TheButton> */}
+
+						<TheButtonDownload>Скачать CV</TheButtonDownload>
 					</div>
 				</div>
 			</div>

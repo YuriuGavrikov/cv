@@ -7,6 +7,13 @@
 	border-bottom: 1px solid var(--first-color);
 	background-color: white;
 	box-shadow: 0 6px 20px -20px #333;
+
+	@media (min-width: 768px) {
+		height: 4.5rem;
+	}
+	@media (min-width: 992px) {
+		height: 3.5rem;
+	}
 }
 .logo {
 	font-weight: bold;

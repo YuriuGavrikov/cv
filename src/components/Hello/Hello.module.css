@@ -39,7 +39,11 @@
 .greeting__contacts {
 	display: flex;
 	justify-content: space-between;
-	gap: 50px;
+	gap: 10px;
+
+	@media (min-width: 1400px) {
+		gap: 100px;
+	}
 }
 .greeting__contacts_item,
 .greeting__contacts_content {
